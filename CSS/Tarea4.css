@@ -1,0 +1,50 @@
+html {
+    box-sizing: border-box;
+    font-size: 30px;
+    font-family: sans-serif;
+  }
+
+  *,
+  *:after,
+  *:before { box-sizing: inherit; }
+
+body {
+    text-align: center;   
+}
+
+.container-post-cards {
+
+}
+
+.images {
+    
+}
+
+.tarjeta{
+    display: inline-block;
+    width: 1px;
+    height: -10px;
+    margin-right: 210px;    
+    transition: all .3s ease;
+    padding: 10px;
+}
+
+.tarjeta img {
+    display: block;
+    transition: all .3s ease;
+    
+}
+
+.tarjeta figcaption {
+    text-align: center;
+}
+
+.after-fixed {
+
+}
+
+.flex-colum-center {
+
+}
+
+.theme-green { background-color:royalblue; }
