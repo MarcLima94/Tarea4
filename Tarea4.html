@@ -1,40 +1,49 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tarea 4</title>
     <link rel="stylesheet" href="./css/Tarea4.css">
 </head>
+
 <body>
     <header id="header" class="theme-green">
         <h3>Películas</h3>
     </header>
-<section id="pelis" class="after-fixed">
-    <p id="pelis-y-mas"></p>
-    <nav class="">
-        <button onclick="alert('Mira lo nuevo que traemos para ti')">Evento disparado como atributo del HTML</button>
-        <button id="say-hi">Evento disparado con un manejador de eventos</button>
-        <button id="cambio-de-color">Cabecera gris</button>
-        <button id="cambio-de-tarjeta">Cambiar a figuras</button>
-    </nav>
-</article id="images" class="container-post-cards">  
-    <figure class="tarjeta">
-        <img src="images/Hunger-Games.jpg" alt="hunger-games">
-        <figcaption>Hunger Games</figcaption>
-    </figure>
-    <figure class="tarjeta">
-        <img src="images/Harry-Potter.jpg" alt="harry-potter">
-        <figcaption>Harry Potter</figcaption>
-    </figure>
-    <figure class="tarjeta">
-        <img src="images/Star-Wars.jpg" alt="star-wars">
-        <figcaption>Star Wars</figcaption>
-    </figure>
-</article>
-<article class="flex-colum-center">
-
-    </section>    
+    <section id="pelis" class="after-fixed">
+        <p id="pelis-y-mas"></p>
+        <nav class="flex-colum-center">
+            <button onclick="alert('Mira lo nuevo que traemos para ti')">Evento disparado como atributo del HTML</button>
+            <button id="say-hi">Evento disparado con un manejador de eventos</button>
+            <button id="cambio-de-color">Cabecera gris</button>
+            <button id="cambio-de-tarjeta">Cambiar a figuras</button>
+        </nav>
+        <article id="images" class="container post cards">
+            <figure class="tarjeta">
+                <img src="images/Hunger-Games.jpg" alt="hunger-games">
+                <p>Hunger Games</p>
+            </figure>
+            <figure class="tarjeta">
+                <img src="images/Harry-Potter.jpg" alt="harry-potter">
+                <p>Harry Potter</p>
+            </figure>
+            <figure class="tarjeta">
+                <img src="images/Star-Wars.jpg" alt="star-wars">
+                <p>Star Wars</p>
+            </figure>
+        </article>
+        <article class="flex-colum-center">
+            <h3 class="Clock-title">h3</h3>
+            <h3 class="Clock">h3 clock</h3>
+            <nav class="flex-colum-center">
+                <button id="start-alarm">Iniciar Alarma</button>
+                <button id="stop-alarm">Detener Alarma</button>
+            </nav>
+        </article>
+    </section>
     <script src="./JS/Tarea4.js"></script>
 </body>
-</html> 
+
+</html>

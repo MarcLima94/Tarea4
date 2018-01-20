@@ -1,50 +1,60 @@
 html {
     box-sizing: border-box;
-    font-size: 30px;
+    font-size: 16px;
     font-family: sans-serif;
-  }
+}
 
-  *,
-  *:after,
-  *:before { box-sizing: inherit; }
+*,
+*:after,
+*:before {
+    box-sizing: inherit;
+}
 
 body {
-    text-align: center;   
-}
-
-.container-post-cards {
-
-}
-
-.images {
-    
-}
-
-.tarjeta{
-    display: inline-block;
-    width: 1px;
-    height: -10px;
-    margin-right: 210px;    
-    transition: all .3s ease;
-    padding: 10px;
-}
-
-.tarjeta img {
-    display: block;
-    transition: all .3s ease;
-    
-}
-
-.tarjeta figcaption {
     text-align: center;
 }
 
-.after-fixed {
+header {
+    text-align: center;
+}
 
+#images {
+    width: 90%;
+    margin: auto;
+}
+
+#images p {
+    text-align: center;
+    font-size: 2rem;
+    color: #424242;
+}
+
+.tarjeta {
+    display: inline-block;
+    width: 250px;
+    transition: all 3s ease;
+}
+
+.tarjeta img {
+    float: left;
+    overflow: hidden;
+    width: 250px;
+    height: 250px;
+    transition: all .3s ease;
+    margin-right: 200px;
+    padding: 5px 5px 5px 5px;
 }
 
 .flex-colum-center {
-
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
 }
 
-.theme-green { background-color:royalblue; }
+.flex-colum-center button {
+    margin: 20px;
+}
+
+.theme-green {
+    background-color: royalblue;
+}
