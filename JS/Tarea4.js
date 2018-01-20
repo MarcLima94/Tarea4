@@ -1,18 +1,14 @@
 /**Declarar variables**/
-const c = console.log();
-const pWhatIsEvent = document.getElementById('pelis-y-más'),
-  btnHello = document.getElementById('say-hi'),
-  btnHeaderColor = document.getElementById('cambio-de-color'),
-  cards = document.querySelectorAll('cambio-de-tarjeta'),
-  clock = document.querySelector('.Clock'),
-  clockTitle = document.querySelector('.Clock-title'),
-  startAlarm = document.getElementById('start-alarm'),
-  stopAlarm = document.getElementById('stop-alarm'),
-  alarm = document.createElement('reloj'),
-  idHeader = document.getElementById("header");
-
-let clockTempo,
-  alarmTempo;
+const clock = document.querySelector('.Clock');
+const btnHello = document.getElementById('say-hi');
+const idHeader = document.getElementById("header");
+const stopAlarm = document.getElementById('stop-alarm');
+const audioMarc = document.getElementById('audioMarc');
+const clockTitle = document.querySelector('.Clock-title');
+const startAlarm = document.getElementById('start-alarm');
+const pWhatIsEvent = document.getElementById('pelis-y-más');
+const cards = document.querySelectorAll('cambio-de-tarjeta');
+const btnHeaderColor = document.getElementById('cambio-de-color');
 
 // Button por change header section.
 btnHeaderColor.addEventListener('click', function () {
@@ -27,30 +23,10 @@ btnHeaderColor.addEventListener('click', function () {
   }
 });
 
-
-
-/*
-    = Asignación de valor
-    == Comparación de valores
-    === Comparación de valores y tipo de dato
-  */
-
-alarm.src = './sound/Nihilore'
-//alarm.controls = true
-//d.body.appendChild(alarm)
-
-/*
-//Sin Arrow Function
-startClock.addEventListener('click', function () {
-  clockTempo = setInterval(function () {
-    clock.textContent = new Date().toLocaleString()
-  }, 1000)
-})
-*/
-startAlarm.addEventListener('click', () => {
-  alert('Hola marc click en btn');
-  //alarmTempo = setTimeout(() => alarm.play(), 3000)
-  alarm.play()
+startAlarm.addEventListener('click', function () {
+  audioMarc.play();
 });
 
-stopAlarm.addEventListener('click', () => clearTimeout(alarmTempo))
+stopAlarm.addEventListener('click', function () {
+  audioMarc.load();
+});
