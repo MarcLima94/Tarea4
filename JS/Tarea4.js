@@ -1,13 +1,10 @@
 /**Declarar variables**/
-const clock = document.querySelector('.Clock');
 const btnHello = document.getElementById('say-hi');
 const idHeader = document.getElementById("header");
 const stopAlarm = document.getElementById('stop-alarm');
 const audioMarc = document.getElementById('audioMarc');
-const clockTitle = document.querySelector('.Clock-title');
 const startAlarm = document.getElementById('start-alarm');
-const pWhatIsEvent = document.getElementById('pelis-y-más');
-const cards = document.querySelectorAll('cambio-de-tarjeta');
+const cards = document.getElementById('cambio-de-tarjeta');
 const btnHeaderColor = document.getElementById('cambio-de-color');
 
 // Button por change header section.

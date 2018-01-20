@@ -30,9 +30,13 @@ header {
 }
 
 .tarjeta {
-    display: inline-block;
     width: 250px;
-    transition: all 3s ease;
+    display: inline-block;
+    transition: transform 5s linear;
+}
+
+#images .tarjeta img:hover {
+    transform: rotateY(180deg);
 }
 
 .tarjeta img {
